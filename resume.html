@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="css/resume.css"> -->
+  <title>Résumé</title>
+  <style>
+    body {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        width: 1000px;
+        /* center body */
+        margin:0 auto;
+    }
+
+    .name, .email {
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .email {
+        font-size: 24px;
+        margin-bottom: 0.5em;
+    }
+
+    .heading {
+        font-size: 20px;
+        grid-column: span 2;
+    }
+
+    .employer {
+        background-color: honeydew;
+    }
+
+    .time, .place {
+        grid-column: 2/3;
+        justify-self: end;
+    }
+
+    .gamename {
+        margin-top: 0em;
+    }
+
+    ul.work, .gamename {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        width:75%;
+    }
+
+    ul.work {
+        margin-top: 0.25em;
+        margin-bottom: 0.75em;
+    }
+  </style>
+</head>
+<body>
+  <div class="name">Kartik Saranathan</div>
+  <div class="email">ksaranat@gmail.com</div>
+  <div class="heading">Work Experience</div>
+  <div class="companyname">Torn Banner Studios</div>
+  <span class="place">Toronto, Ontario</span>
+  <span class="time">Oct 2013 &mdash; </span>
+
+  <div class="gamename"> Chivalry 2: Medieval Warfare </div>
+  
+    <ul class="work">
+      <li>
+        Prototyped static mesh merging using Houdini to drive UE4's
+        Hierarchical LOD system.  Sole programmer on the feature.
+        Worked with artists to implement a workflow from UE4 editor to
+        Houdini.
+      </li>
+      <li>
+        Skeletal mesh draw call optimization.  Runtime merging of
+        meshes and textures.
+      </li>
+      <li>
+        Redesigned skeletal mesh destruction (similar to Skin Weight
+        Profiles added later by Epic).  Worked with artists to improve
+        workflow from Maya to UE4 editor. Implement destruction in a
+        networked multiplayer context.
+      </li>
+      <li>
+        Tools to help optimize animation blueprints and manage memory
+        usage.  Various frame rate optimizations
+      </li>
+      <li>
+        Character customization system
+      </li>
+      <li>
+        Automated build setup using perforce and teamcity.
+      </li>
+      <li>
+        Several large engine upgrades involving intergration of
+        third-party and in-house engine modifications.
+      </li>
+    </ul>
+  
+  <div class="gamename"> Mirage: Arcane Warfare </div>
+  
+    <ul class="work">
+      <li>Skeletal mesh destruction at runtime. Pipeline to support breaking skeletal meshes</li>
+      <li>Performance analytics.  CPU/GPU performance tracking using Elasticsearch/Logstash/Kibana</li>
+      <li>Automation testing using jenkins to automate testing game levels. </li>
+      <li>Character customization system.  Customization of attachments and textures.  System for UI rendering</li>
+      <li>Engine maintenance/feature integration (Wwise, Simplygon, Logstash, Crash reporting)</li>
+      <li>Multiplayer gameplay features.  Projectile abilities.  Network relevant changes for character dismemberment</li>
+      <li>Rendering features</li>
+    </ul>
+  
+  <div class="gamename"> Chivalry: Deadliest Warrior </div>
+  
+    <ul class="work">
+      <li>Evaluate PS4 port</li>
+      <li>Bug fixes</li>
+      <li>Memory optimizations (sound)</li>
+      <li>Gameplay analytics</li>
+    </ul>
+  
+  <div class="companyname">GREE International Inc.</div>
+  <span class="place">San Francisco, California</span>
+  <span class="time">Aug 2012 &mdash; Dec 2012</span>
+  
+  <div class="gamename"> Book of Ashes: Age of Dragons (iPhone, iPad) </div>
+  
+    <ul class="work">
+      <li>client/server side implementation of achievement system (PHP/Javascript)</li>
+      <li>movie playing with subtitles on device and browser (Objective-C, Javascript, HTML5)</li>
+      <li>miscellaneous UI elements (Javascript/HTML5)</li>
+    </ul>
+  
+  <div class="companyname">Namco Bandai Games America</div>
+  <span class="place">Santa Clara, California</span>
+  <span class="time">Jul 2008 &mdash; Jul 2012</span>
+  
+  <div class="gamename">
+    Unannounced project
+  </div>
+  
+  <ul class="work">
+    <li>research rendering technology to match art style of the game</li>
+    <li>prototype simple gameplay mechanics</li>
+    <li>evaluate third-party game engines</li>
+  </ul>
+
+  
+  <div class="gamename"> Tekken Hybrid (PS3) </div>
+  
+  <ul class="work">
+    <li>emulation layer to allow a PS2 game to run on PC/PS3</li>
+    <li>optimize graphics system to get the game rendering at 1080p and running at 60Hz</li>
+  </ul>
+  
+  <div class="gamename"> Splatterhouse (Xbox360/PS3) </div>
+  
+  <ul class="work">
+    <li>access existing backend to enable online community features on the consoles (C++, PHP, Java)</li>
+    <li>sole engineer responsible for downloadable content system using Playstation Network and Xbox LIVE Marketplace (C/C++)</li>
+    <li>PS3/Xbox360 TCR/TRC compliance (C/C++)</li>
+  </ul>
+      
+  
+  <div class="gamename">
+    Afro Samurai (Xbox360/PS3)
+  </div>
+  
+  <ul class="work">
+    <li>reduce/eliminate memory fragmentation and optimize memory budget (C/C++)</li>
+    <li>bugfixes and refactoring for PS3 (C/C++/Python)</li>
+  </ul>
+
+  
+  <div class="gamename">
+    Other
+  </div>
+  
+  <ul class="work">
+    <li>prototyped games showing multiplatform communication between PC and game consoles (Web browser/PC/Xbox360/PS3) (C/C++/Java/Javascript)</li>
+    <li>graphics, system, networking components of an in-house game engine (PC/PS3/Xbox360) (C/C++/Python)</li>
+  </ul>
+
+  
+  <div class="companyname">
+    Electronic Arts Inc.
+  </div>
+  <span class="place">Burnaby, British Columbia</span>
+  <span class="time">Aug 2004 &mdash; Oct 2007</span>
+  
+  <div class="gamename">
+    FIFA 2008 (Xbox360/PS3) (C/C++)
+  </div>
+  
+  <ul class="work">
+    <li>rendering infrastructure optimization for the PS3 SKU</li>
+    <li>3d crowd improvements</li>
+    <li>investigate global shadowing techniques</li>
+  </ul>
+
+  
+  <div class="gamename">
+    FIFA 2007 (Xbox360) (C++)
+  </div>
+  
+  <ul class="work">
+    <li>prototyped a self-shadowing solution for players</li>
+    <li>implemented volume lights (rendering effect)</li>
+    <li>optimizations to FIFA crowd system</li>
+    <li>porting rendering code/shaders to PS3</li>
+  </ul>
+
+  
+  <div class="gamename">
+    MVP NCAA Baseball 2006 (Xbox/PS2) (C/C++)
+  </div>
+  
+  <ul class="work">
+    <li>prototyped next-gen crowd technique on Xbox and PS2</li>
+    <li>sole engineer for design and implementation of the Create Ballpark feature</li>
+    <li>stadium art pipeline maintainer; added several enhancements to stadium asset building</li>
+  </ul>
+
+  
+  <div class="gamename">
+    MVP Baseball 2005 (Xbox/PS2/Gamecube) (C/C++)
+  </div>
+  
+  <ul class="work">
+    <li>frontend enhancements for Cooperstown stadiums (classic stadiums)</li>
+    <li>fixing PS2 related rendering and file system concurrency issues</li>
+    <li>enhancements to art pipeline</li>
+  </ul>
+
+  
+  <div class="companyname">
+    Nelvana Studios
+  </div>
+  <span class="place">Toronto, Ontario</span>
+  <span class="time">Jan 2004 &mdash; Apr 2004</span>
+  
+  <ul class="work">
+    <li>Maya plugins to bind fur to skin for the Care Bears movie (C++)</li>
+    <li>development of a dynamic assembly system around Maya (Perl/Mel)</li>
+    <li>streamlining the render pipeline</li>
+    <li>tools to automate face rigging of characters in Maya, compare large DAG hierarchies, visualize relations between source code modules (Perl/Mel)</li>
+    <li>Maya plugin to embed a Mozilla browser component in Maya (C++/Perl/Mel)</li>
+  </ul>
+
+  
+  <div class="companyname">
+    Alias
+  </div>
+  <span class="place">Toronto, Ontario</span>
+  <span class="time">May 2002 &mdash; Aug 2002</span>
+  
+  <ul class="work">
+    <li>designed and implemented Maya plugins to translate Maya scenes to and from AutoCad DWG format (C++)</li>
+    <li>several enhancements to Wavefront OBJ importer/exporter plugins (C++, lex)</li>
+    
+  </ul>
+
+  
+  <div class="companyname">
+    Okino Computer Graphics
+  </div>
+  <span class="place">Mississauga, Ontario</span>
+  <span class="time">Jan 2001 &mdash; Apr 2001<br>Sep 2001 &mdash; Dec 2001</span>
+  
+  <ul class="work">
+    <li>polygon reduction algorithm for Okino's Nugraf software (C/C++)</li>
+    <li>implemented hypertextures used to simulate fur, fire, smoke and other effects (C)</li>
+    <li>translating data between Okino PolyTrans and Rhinoceros, a NURBS based modeling package (C++)</li>
+  </ul>
+
+  
+  <!--     <div class="employer">
+    <div class="companyname">
+      Aging Research Center, U.C. Berkeley
+    </div> 
+    <div class="timeplace">
+      <span class="place">Waterloo, Ontario</span>
+      <span class="time">Sep 2000 &mdash; Dec 2001</span>
+    </div>
+      <ul class="work" class="work">
+        <li>programs to help researchers find relevant aging research journal papers (www.arclab.org) (Perl)</li>
+        <li>visually representing relations between concepts (Lisp, Perl, Java, PHP)</li>
+        <li>grammatically decomposing sentences using natural language parsers to facilitate understanding (Perl)</li>
+        <li>programs dealing with knowledge representation using methods such as document clustering and primitive reasoning (Lisp, Perl, PHP)</li>
+        <li>mining and cataloging data into an online database (Perl, SQL)</li>
+      </ul>
+  </div>
+  
+  <div class="employer">
+    <div class="companyname">
+      Texas Instruments Canada
+    </div>
+    <div class="timeplace">
+      <span class="place">Toronto, Ontario</span>
+      <span class="time">May 2000 &mdash; Aug 2000</span>
+    </div>
+      <ul class="work" class="work">
+        <li>porting Code Composer Studio (CCS) from Windows NT to Solaris and HP Unices by solving architecture and C++ compiler issues</li>
+        <li>worked with a team to implement new features in CCS</li>
+        <li>utilities to perform source control database modifications (Perforce, Perl), time synchronization among networked computers (Perl), and makefile parsing (Perl)</li>
+      </ul>
+  </div>
+  
+  <div class="employer">
+    <div class="companyname">
+      Corel Corporation
+    </div>
+    <div class="timeplace">
+      <span class="place">Ottawa, Ontario</span>
+      <span class="time">Sep 1999 &mdash; Dec 1999</span>
+    </div>
+    <div class="timeplace">
+      
+    </div>
+      <ul class="work" class="work">
+        <li>wrote system level design specifications for installation process of Corel Linux</li>
+        <li>implemented install of Corel Linux on a Windows partition</li>
+        <li>modified the Linux kernel to probe for and detect PC network cards (C, Perl)</li>
+        <li>utilities to automate the build process (Perl)</li>
+        <li>bugfixes and performance enhancements to the Corel Linux install process</li>
+      </ul>
+  </div>
+  
+  <div class="employer">
+    <div class="companyname">
+      Corel Computer
+    </div>
+    <div class="timeplace">
+      <span class="place">Ottawa, Ontario</span>
+      <span class="time">Jan 1999 &mdash; Apr 1999</span>
+    </div>
+      <ul class="work" class="work">
+        <li>UI improvements to K-Desktop environment (KDE) under the Netwinder platform</li>
+        <li>synchronized changes to KDE codebase with the kde.org community (Perl, C, C++)</li>
+        <li>bugfixes to the KDE codebase running under Linux (C, C++)</li>
+      </ul>
+  </div>
+  
+  <div class="employer">
+    <div class="companyname">
+      Mortice Kern Systems Incorporated
+    </div>
+    <div class="timeplace">
+      <span class="place">Waterloo, Ontario</span>
+      <span class="time">Oct 1995 &mdash; Jun 1996</span>
+    </div>
+      <ul class="work" class="work">
+        <li>created tutorials for the MKS Source Integrity package</li>
+        <li>designed utilities to display statistical information based on bug reports on the company home page (C)</li>
+        <li>ported utilities from DOS to Windows 95 (Borland C++, Visual C++)</li>
+        <li>updated customer database (Microsoft Access)</li>
+      </ul>
+  </div>
+  
+-->
+
+<div class="heading">
+  Awards
+</div>
+
+<ul class="work">
+  <li>Natural Sciences and Engineering Research Council of Canada Scholarship 2001</li>
+  <li>Co-op Achievement Award, Waterloo Collegiate Institute (high
+    school) 1996</li>
+  </ul>
+
+  
+  <div class="heading">
+    Personal Data
+  </div>
+  
+  <ul class="work">
+    <li>Canadian citizen</li>
+    <li>Hobbies include music composition on guitar/piano and reading</li>
+    
+  </ul>        
+
+  
+  <div class="heading">
+    Education
+  </div>
+  <div class="companyname">
+    University of Waterloo
+  </div> 
+  <span class="place">
+    Waterloo, Ontario
+  </span>
+  <span class="time">
+    Sep 1998 &mdash; Aug 2003
+  </span>
+  
+  <ul class="work">
+    <li>BMath Honors Co-op in Computer Science, Minor in Pure Mathematics</li>
+  </ul>
+
+</div>
+</body>
+</html>
+
+
